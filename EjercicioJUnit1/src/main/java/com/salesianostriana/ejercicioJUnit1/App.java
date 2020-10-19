@@ -11,10 +11,10 @@ public class App {
             //Cobertura del método deposit
 
             //Resultado esperado = True
-            System.out.println(c1.deposit(1001));
+            c1.deposit(1001);
 
             //Resultado esperado = False
-            System.out.println(c1.deposit(-1001));
+            c1.deposit(-1001);
 
 
             //Cobertura del método withdraw
@@ -22,22 +22,22 @@ public class App {
             //Vamos a retirar una cantidad positiva y normal que no excceda
             //Tanto de cuota como de importe
             //Resultado esperado = true
-            System.out.println(c1.withdraw(1200, 12));
+            c1.withdraw(1200, 12);
 
             //Vamos a retirar una cantidad positiva y normal que no excceda
             //Tanto de cuota negativa como de importe positivo
             //Resultado esperado = false
-            System.out.println(c1.withdraw(1200, -12));
+            c1.withdraw(1200, -12);
 
             //Vamos a retirar una cantidad negativa y normal que no excceda
             //Tanto de cuota positiva como de importe negativo
             //Resultado esperado = false
-            System.out.println(c1.withdraw(-1200, 12));
+            c1.withdraw(-1200, 12);
 
             //Vamos a retirar una cantidad negativa y normal que no excceda
             //Tanto de cuota negativa como de importe negativo
             //Resultado esperado = false
-            System.out.println(c1.withdraw(-1200, -12));
+            c1.withdraw(-1200, -12);
 
 
 
